@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semi-supervised learning</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="terminal-tag">[module] semi_supervised_learning</div>
+      <h1>Обучение с частичным самообучением (Semi-supervised)</h1>
+      <p class="subtitle">Мало размеченных данных + много неразмеченных.</p>
+      <nav class="main-nav"><a class="nav-btn" data-transition="matrix" href="index.html">← Главная</a></nav>
+    </header>
+
+    <section class="content">
+      <h2>Кратко</h2>
+      <p>Комбинирует supervised и unsupervised подходы для повышения качества при нехватке меток.</p>
+
+      <h2>Именования (RU / EN)</h2>
+      <ul>
+        <li>Полу-контролируемое обучение</li>
+        <li>Частично контролируемое обучение</li>
+        <li>Semi-supervised learning</li>
+        <li>Learning with few labels</li>
+      </ul>
+
+      <h2>Сценарии</h2>
+      <ul>
+        <li>Классификация изображений при дефиците разметки</li>
+        <li>NLP-задачи в узкой предметной области</li>
+        <li>Био/мед-данные, где разметка дорогая</li>
+      </ul>
+
+      <h2>Плюсы / Минусы</h2>
+      <ul>
+        <li><b>Плюсы:</b> лучше, чем только на малом labeled-наборе.</li>
+        <li><b>Минусы:</b> риск накопления ошибок в псевдометках.</li>
+      </ul>
+
+      <h2>Пошагово</h2>
+      <ol>
+        <li>Обучить базовую модель на labeled-части</li>
+        <li>Сгенерировать псевдометки для unlabeled</li>
+        <li>Отфильтровать по confidence</li>
+        <li>Дообучить на объединённом наборе</li>
+        <li>Итеративно повторять цикл</li>
+      </ol>
+    </section>
+  </div>
+  <script src="matrix-transition.js"></script>
+</body>
+</html>

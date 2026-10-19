@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ансамбли</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="terminal-tag">[module] ensemble_learning</div>
+      <h1>Ансамбль</h1>
+      <p class="subtitle">Комбинирование нескольких моделей в один сильный предиктор.</p>
+      <nav class="main-nav"><a class="nav-btn" data-transition="matrix" href="index.html">← Главная</a></nav>
+    </header>
+
+    <section class="content">
+      <h2>Кратко</h2>
+      <p>Ансамбли снижают variance и/или bias за счёт объединения разных моделей.</p>
+
+      <h2>Именования (RU / EN)</h2>
+      <ul>
+        <li>Ансамблевое обучение</li>
+        <li>Комитет моделей</li>
+        <li>Ensemble learning</li>
+        <li>Model aggregation</li>
+      </ul>
+
+      <h2>Сценарии</h2>
+      <ul>
+        <li>Gradient Boosting для табличных данных</li>
+        <li>Random Forest в классификации</li>
+        <li>Stacking в соревновательном ML</li>
+      </ul>
+
+      <h2>Плюсы / Минусы</h2>
+      <ul>
+        <li><b>Плюсы:</b> рост качества и стабильности.</li>
+        <li><b>Минусы:</b> тяжелее интерпретировать и обслуживать.</li>
+      </ul>
+
+      <h2>Пошагово</h2>
+      <ol>
+        <li>Подобрать разнообразные базовые модели</li>
+        <li>Обучить их независимо/последовательно</li>
+        <li>Объединить (vote/average/stack)</li>
+        <li>Оценить прирост по метрикам и latency</li>
+      </ol>
+    </section>
+  </div>
+  <script src="matrix-transition.js"></script>
+</body>
+</html>

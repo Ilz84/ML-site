@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Co-learning</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="terminal-tag">[module] co_learning</div>
+      <h1>Co-learning</h1>
+      <p class="subtitle">Совместное обучение нескольких моделей/взглядов на данные.</p>
+      <nav class="main-nav"><a class="nav-btn" data-transition="matrix" href="index.html">← Главная</a></nav>
+    </header>
+
+    <section class="content">
+      <h2>Кратко</h2>
+      <p>Модели обучаются вместе, обмениваются сигналами и улучшают устойчивость/обобщение.</p>
+
+      <h2>Именования (RU / EN)</h2>
+      <ul>
+        <li>Совместное обучение</li>
+        <li>Ко-обучение / кооперативное обучение</li>
+        <li>Co-learning</li>
+        <li>Co-training (частный случай)</li>
+      </ul>
+
+      <h2>Сценарии</h2>
+      <ul>
+        <li>Мульти-модальные системы (текст+изображение)</li>
+        <li>Teacher-student схемы</li>
+        <li>Робастность к шумной разметке</li>
+      </ul>
+
+      <h2>Плюсы / Минусы</h2>
+      <ul>
+        <li><b>Плюсы:</b> лучшее обобщение, устойчивость.</li>
+        <li><b>Минусы:</b> более сложный пайплайн и отладка.</li>
+      </ul>
+
+      <h2>Пошагово</h2>
+      <ol>
+        <li>Выбрать 2+ модели/представления</li>
+        <li>Сформировать механизм обмена сигналом</li>
+        <li>Синхронно обучать с общей целью</li>
+        <li>Регуляризовать согласованность</li>
+        <li>Проверить вклад каждой ветки</li>
+      </ol>
+    </section>
+  </div>
+  <script src="matrix-transition.js"></script>
+</body>
+</html>

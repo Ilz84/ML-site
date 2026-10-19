@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-supervised learning</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="terminal-tag">[module] self_supervised_learning</div>
+      <h1>Self-supervised learning</h1>
+      <p class="subtitle">Метки генерируются из структуры самих данных.</p>
+      <nav class="main-nav"><a class="nav-btn" data-transition="matrix" href="index.html">← Главная</a></nav>
+    </header>
+
+    <section class="content">
+      <h2>Кратко</h2>
+      <p>Модель решает вспомогательные задачи (pretext tasks), чтобы выучить полезные представления.</p>
+
+      <h2>Именования (RU / EN)</h2>
+      <ul>
+        <li>Самоконтролируемое обучение</li>
+        <li>Самонаблюдаемое обучение</li>
+        <li>Self-supervised learning (SSL)</li>
+        <li>Representation pretraining</li>
+      </ul>
+
+      <h2>Сценарии</h2>
+      <ul>
+        <li>Предобучение языковых моделей</li>
+        <li>Контрастивное обучение изображений</li>
+        <li>Аудио/видео представления</li>
+      </ul>
+
+      <h2>Плюсы / Минусы</h2>
+      <ul>
+        <li><b>Плюсы:</b> масштабируется на огромные unlabeled-корпуса.</li>
+        <li><b>Минусы:</b> сложный дизайн pretext-задач и вычислительная цена.</li>
+      </ul>
+
+      <h2>Пошагово</h2>
+      <ol>
+        <li>Сформировать pretext objective</li>
+        <li>Предобучить энкодер</li>
+        <li>Оценить качество представлений</li>
+        <li>Дообучить на целевой задаче</li>
+      </ol>
+    </section>
+  </div>
+  <script src="matrix-transition.js"></script>
+</body>
+</html>

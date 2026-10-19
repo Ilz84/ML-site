@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fine-tuning</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="terminal-tag">[module] fine_tuning</div>
+      <h1>Fine-tuning</h1>
+      <p class="subtitle">Тонкая настройка предобученной модели под конкретную задачу.</p>
+      <nav class="main-nav"><a class="nav-btn" data-transition="matrix" href="index.html">← Главная</a></nav>
+    </header>
+
+    <section class="content">
+      <h2>Кратко</h2>
+      <p>Вместо обучения с нуля берётся pre-trained модель и адаптируется на целевом датасете.</p>
+
+      <h2>Именования (RU / EN)</h2>
+      <ul>
+        <li>Тонкая настройка модели</li>
+        <li>Дообучение</li>
+        <li>Fine-tuning</li>
+        <li>Domain adaptation (частично пересекается)</li>
+      </ul>
+
+      <h2>Сценарии</h2>
+      <ul>
+        <li>LLM под корпоративную терминологию</li>
+        <li>CV-модель под новый класс объектов</li>
+        <li>NLP для узкоспециализированных текстов</li>
+      </ul>
+
+      <h2>Плюсы / Минусы</h2>
+      <ul>
+        <li><b>Плюсы:</b> быстро, экономно, высокий старт.</li>
+        <li><b>Минусы:</b> катастрофическое забывание, риск overfit на малых данных.</li>
+      </ul>
+
+      <h2>Пошагово</h2>
+      <ol>
+        <li>Выбрать базовую pre-trained модель</li>
+        <li>Подготовить целевые данные</li>
+        <li>Заморозить/разморозить нужные слои</li>
+        <li>Обучить с малым learning rate</li>
+        <li>Оценить и провести safety/quality checks</li>
+      </ol>
+    </section>
+  </div>
+  <script src="matrix-transition.js"></script>
+</body>
+</html>

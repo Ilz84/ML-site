@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обучение с учителем</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="terminal-tag">[module] supervised_learning</div>
+      <h1>Обучение с учителем</h1>
+      <p class="subtitle">Модель учится на размеченных примерах: вход → правильный ответ.</p>
+      <nav class="main-nav">
+        <a class="nav-btn" data-transition="matrix" href="index.html">← Главная</a>
+      </nav>
+    </header>
+
+    <section class="content">
+      <h2>Кратко</h2>
+      <p>Это подход, где у каждого объекта есть метка/цель, и модель минимизирует ошибку предсказания.</p>
+
+      <div class="columns">
+        <div class="block">
+          <h2>Именования (RU / EN)</h2>
+          <ul>
+            <li>Обучение с учителем</li>
+            <li>Обучение по размеченным данным</li>
+            <li>Supervised learning</li>
+            <li>Labelled learning / Learning from labeled data</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h2>Популярные сценарии</h2>
+          <ul>
+            <li>Классификация спама/фрода</li>
+            <li>Скоринг и риск-оценка</li>
+            <li>Прогноз продаж/цен (регрессия)</li>
+            <li>Медицинская диагностика по признакам</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Плюсы</h2>
+      <ul>
+        <li>Высокая управляемость результата</li>
+        <li>Понятные метрики качества</li>
+        <li>Хорошо переносится в продакшен</li>
+      </ul>
+
+      <h2>Минусы</h2>
+      <ul>
+        <li>Нужны качественные метки (дорого и долго)</li>
+        <li>Риск переобучения</li>
+        <li>Плохая работа при сдвиге данных</li>
+      </ul>
+
+      <h2>Как работает пошагово</h2>
+      <ol>
+        <li>Сбор и разметка данных</li>
+        <li>Очистка и подготовка признаков</li>
+        <li>Разделение на train/valid/test</li>
+        <li>Обучение модели</li>
+        <li>Оценка метрик и тюнинг</li>
+        <li>Деплой, мониторинг, переобучение</li>
+      </ol>
+    </section>
+  </div>
+  <script src="matrix-transition.js"></script>
+</body>
+</html>
