@@ -1,6 +1,6 @@
 (() => {
   const DURATION = 5800; // 5.8 сек
-  const chars = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン1234567890ё"№;%:?*<>";
+  const chars = "ё@#$%^&*<>1234567890アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン";
   let overlay, canvas, ctx, cols, drops, animationId;
 
   function ensureOverlay() {
